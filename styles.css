@@ -165,9 +165,31 @@ a {
 }
 
 #introduction {
-    height: 100%;
+
     margin-top: 3rem;
+    background-color: #242333;
 }
+
+.information-layout-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.information-layout-box {
+    width: 40%;
+    height: 20rem;
+    background-color: red;
+    display: inline-block;
+
+}
+
+#AC {
+    background-image: url("/Resources/mysterious\ organism\ project.png");
+    background-size: cover;
+    background-position: center;
+}
+
 /* responsiveness */
 @media only screen and (min-resolution: 200dpi) {
     html, body {
