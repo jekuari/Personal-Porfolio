@@ -210,9 +210,24 @@ a {
     border-radius: 1rem;
 }
 
+.information-link:hover {
+    background-color: #ff9c7e;
+}
+
+#BB p {
+    color: #F47851;
+    font-size: 3rem;
+    font-weight: 1000;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
 #mysterious-organism-img {
     width: 100%;
 }
+
+
+
 /* responsiveness */
 @media only screen and (min-resolution: 200dpi) {
     html, body {
@@ -226,9 +241,6 @@ a {
         display: inline;
     }
 
-    #introduction {
-    }
-
     .information-layout-container {
         flex-direction: column;
         width: auto;
@@ -240,7 +252,9 @@ a {
         width: auto;
         margin: 1rem;
     }
-
+    #BA {
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-height: 800px) {
