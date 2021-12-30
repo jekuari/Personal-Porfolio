@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -80,7 +81,7 @@ ul li {
     text-transform: uppercase;
     margin: 0px 1rem;
 }
-
+/* content */
 main {
     position: absolute;
     width: 100%;
@@ -93,6 +94,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    
 }
 
 #banner-image {
@@ -142,7 +144,7 @@ main {
 }
 
 #levedoper-photo{
-    width: 50%;
+    width: 10rem;
     border-radius: 50%;
     border: 0.4rem solid #F47851;
 }
@@ -162,6 +164,7 @@ main {
 #more-button-text {
     text-decoration: none;
     color: white;
+    
 }
 
 a {
@@ -252,9 +255,9 @@ footer p {
 }
 
 /* responsiveness */
-@media only screen and (min-width:320px) and (max-width: 961px) and (min-resolution: 175dpi) {
+@media only screen and (min-width:320px) and (max-width: 961px) and (-webkit-min-device-pixel-ratio: 2) {
     html, body {
-        font-size: 60px;
+        font-size: 20px;
     }
     #nav-right {
         display: none;
