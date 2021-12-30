@@ -226,10 +226,33 @@ a {
     width: 100%;
 }
 
+#social-media {
+    width: 2rem;
+    height: 2rem;
+}
 
+#twitter-icon {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+footer {
+    background-color: #303030;
+    color: white;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
 
 /* responsiveness */
-@media only screen and (min-resolution: 200dpi) {
+@media only screen and (min-width:320px) and (max-width: 961px) and (min-resolution: 175dpi) {
     html, body {
         font-size: 60px;
     }
