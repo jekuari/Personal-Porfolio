@@ -282,9 +282,3 @@ footer p {
         flex-direction: column-reverse;
     }
 }
-
-@media only screen and (max-height: 800px) {
-    #levedoper-photo {
-        width: 30%;
-    }
-}
