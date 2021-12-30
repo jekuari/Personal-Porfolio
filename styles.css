@@ -29,7 +29,7 @@ a {
 p {
     font-size: 1rem;
 }
-
+/* nav bar */
 header {
     position: fixed;
     display: flex;
@@ -55,6 +55,30 @@ nav {
     display: none;
 }
 
+#mobile-menu {
+    display: flex;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    right: 0px;
+    z-index: 10;
+    background-color: black;
+    flex-direction: row;
+    width: 100%;
+    top: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+#mobile-menu li {
+    list-style-type: none;
+}
+
+#mobile-menu-container {
+    display:none;
+}
+
 #menu-icon {
     height: 3rem;
 }
@@ -63,7 +87,7 @@ nav {
     margin-left: 1.5rem;
 }
 
-nav ul {
+#desktop-nav {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -74,7 +98,7 @@ nav ul {
     margin: 0px 1rem 0px 0px;
 }
 
-ul li {
+#desktop-nav li {
     font-size: 1.4rem;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;

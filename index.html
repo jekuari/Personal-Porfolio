@@ -15,7 +15,7 @@
                     <a href="index.html"><h2>LEVEDOPER</h2></a>
                 </div>
                 <div id="nav-right">
-                    <ul>
+                    <ul id="desktop-nav">
                         <li><a>Portfolio</a></li>
                         <li><a>about</a></li>
                         <li><a>contact</a></li>
@@ -24,6 +24,16 @@
                 </div>
                 <div id="nav-right-mobile">
                     <img id="menu-icon" src="Resources/menu-white.svg">
+                </div>
+                <div id="mobile-menu-container">
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a>Portfolio</a></li>
+                            <li><a>about</a></li>
+                            <li><a>contact</a></li>
+                            <li><a>api</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -83,5 +93,19 @@
                 <p>&#169 Ricardo Feregrino 2021</p>
             </footer>
         </main>
+        <script>
+            let mobilemenu = false;
+            let navigation = document.getElementById('nav-right-mobile');
+            navigation.onclick = function(){
+                const menu = document.getElementById('mobile-menu-container');
+                if (mobilemenu === false) {
+                    menu.style.display = 'contents';
+                    mobilemenu = true;
+                } else {
+                    menu.style.display = 'none';
+                    mobilemenu = false;
+                }
+            }
+        </script>
     </body>
 </html>
